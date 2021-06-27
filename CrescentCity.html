@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+    <script>
+		function openNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
+		function closeNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
+	</script>
+    <title>Crescent City</title>
+</head>
+<body>
+    <header>
+        <!--MENÚ-->
+        <nav class="mySidenav">
+            <button class="MenuButton"> 
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <ul>
+                        <li>
+                            <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
+                        </li>
+                        <li>
+                            <a href="Sobrelaautora.html">Sobre la autora</a>
+                        </li>
+                        <li>
+                            <a href="Libros.html">Libros</a>
+                                <ul>
+                                    <li>
+                                        <a href="TOG.html">TOG</a>
+                                    </li>
+                                     <li>
+                                        <a href="ACOTAR.html">ACOTAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="CrescentCity.html">Crescent City</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                             <a href="Fanart.html">Fanart</a>
+                        </li>
+                        <li>
+                            <a href="Eventos.html">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="Redessociales.html">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </a>
+            </button>
+        </nav>
+        <span style="font-size:45px;cursor:pointer; color: #f1f1f1;" onclick="openNav()">&#9776;</span>
+    </header>
+<!--AQUÍ INICI MI PÁGINA-->
+    <main>
+        <!--MENÚ DE LIBROS-->
+        <nav>
+            <ul class="menuLibros">
+                <li><a href="TOG.html">Trone of Glass</a></li>
+                <li><a href="ACOTAR.html">A Court of Thorns and Roses</a></li>
+                <li><a href="CrescentCity.html">Crescent City</a></li>
+                <li><a href="Catwoman.html">Catwoman Soulstealer</a></li>
+            </ul>
+        </nav>
+       
+    </main>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
+    </footer>
+</body>
+</html>

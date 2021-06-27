@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+    <script>
+		function openNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
+		function closeNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
+	</script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+<!--MENÚ-->
+        <nav class="mySidenav">
+            <button class="MenuButton"> 
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <ul>
+                        <li>
+                            <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
+                        </li>
+                        <li>
+                            <a href="Sobrelaautora.html">Sobre la autora</a>
+                        </li>
+                        <li>
+                            <a href="Libros.html">Libros</a>
+                            <ul>
+                                <li>
+                                    <a href="TOG.html">TOG</a>
+                                </li>
+                                <li>
+                                    <a href="ACOTAR.html">ACOTAR</a>
+                                </li>
+                                <li>
+                                    <a href="CrescentCity.html">Crescent City</a>
+                                </li>
+                                <li>
+                                    <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Fanart.html">Fanart</a>
+                        </li>
+                        <li>
+                            <a href="Eventos.html">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="Redessociales.html">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </a>
+            </button>
+        </nav>
+        <span style="font-size:45px;cursor:pointer; color: #f1f1f1;" onclick="openNav()">&#9776;</span>
+    </header>
+<!--AQUÍ INICI MI PÁGINA-->
+    <main>
+        <div id="home">
+            <section id="portada" class="border">
+                <div class="portada Pindex">
+                    <h1 class="titulo">
+                        Sarah Janet Maas
+                    </h1>
+                    <h2 class="titulo subtitulo">
+                        Autora número 1 en "The New York Times"
+                    </h2>
+                </div>
+            </section>
+            <section id="eventos" class="border">
+                <h3 class="titulo subtitulo">
+                    EVENTOS
+                </h3>
+                <h4 class="evento blanco">Te invitamos a la premiere de "House of Sky and Breath", el segundo libro de la saga Crescent City.</h4>
+    <!--IMAGEN A MODO ILUSTRATIVO, ACÁ VA UN CALENDARIO REAL-->
+                <img src="img/Calendario.jpg" alt="">
+                <img src="img/Calendario.jpg" alt="">
+                <button class="compraButton" style="vertical-align:middle">
+                    <a href="Eventos.html">
+                        <span>
+                            Más información
+                        </span>
+                    </a>
+                </button>
+            </section>
+            <section id="novedades" class="border">
+                <article>
+                    <h3 class="titulo subtitulo naranja">
+                        LO ÚLTIMO DE LA AUTORA
+                    </h3>
+                </article>
+                <div class="flexContainer"> 
+                    <img src="img/Libros ACOSF.jpg" alt="ACourtofSilverFlames">
+                    <div>
+                        <p class="parrafo novedades">
+                            Un poder indomable. Una pasión indomable.
+                        </p>
+                        <p class="parrafo">
+                            Nesta Archeron siempre ha sido muy orgullosa, rápida para la ira y lenta para perdonar. Y desde que fue forzada a entrar en el Caldero y se convirtió en Alta Fae en contra de su voluntad, ha luchado por encontrar un lugar para sí misma dentro del extraño y mortal mundo en el que habita. 
+                        </p>
+                        <p class="parrafo promocion">
+                            No te la pierdas. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="sagas" class="border">
+                <h3 class="titulo subtitulo">
+                    TODAS SUS OBRAS
+                </h3>
+                <article>
+                    <div class="flex flexlibros">
+                        <img src="img/Libros ACOTAR.jpg" alt="ACourtofThornsandRoses">
+                        <img src="img/Libros ACOMAF.jpg" alt="ACourtofMistandFury">
+                        <img src="img/Libros ACOWAR.jpg" alt="ACourtofWingsandRuin">
+                        <img src="img/Libros ACOFAS.jpg" alt="ACourtofFrostandStarlight">
+                        <img src="img/Libros ACOSF.jpg" alt="ACourtofSilverFlames">
+                    </div>
+                    <div class="flex flexlibros">
+                        <img src="img/Libros TOG.jpg" alt="ThroneofGlass">
+                        <img src="img/Libros COM.jpg" alt="CrownofMidnight">
+                        <img src="img/Libros HOF.jpg" alt="HeirofFire">
+                        <img src="img/Libros QOS.jpg" alt="QueenofShadows">
+                        <img src="img/Libros EOS.jpg" alt="EmpireofStorms">
+                        <img src="img/Libros TOD.jpg" alt="TowerofDawn">
+                        <img src="img/Libros KOA.jpg" alt="KingdomofAsh">
+                        <img src="img/Libros TAB.jpg" alt="TheAssassin'sBlade">
+                    </div>
+                    <div class="flex flexlibros">
+                        <img src="img/Libros HOEAB.jpg" alt="HouseofEarthandBlood">
+                        <img src="img/Libros HOSAB.jpg" alt="HouseofSkyandBreath">
+                    </div>
+                    <div class="flex flexlibros">
+                        <img src="img/Libros Catwoman.jpg" alt="Catwoman">
+                    </div>
+                </article>
+        </div>
+    </main>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
+</footer>
+</body>
+</html>

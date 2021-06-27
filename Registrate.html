@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Style.css">
+    <script>
+		function openNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
+		function closeNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
+	</script>
+    <title>Registrate</title>
+</head>
+<body>
+    <header>
+        <!--MENÚ-->
+        <nav class="mySidenav">
+            <button class="MenuButton"> 
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <ul>
+                        <li>
+                            <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
+                        </li>
+                        <li>
+                            <a href="Sobrelaautora.html">Sobre la autora</a>
+                        </li>
+                        <li>
+                            <a href="Libros.html">Libros</a>
+                                <ul>
+                                    <li>
+                                        <a href="TOG.html">TOG</a>
+                                    </li>
+                                     <li>
+                                        <a href="ACOTAR.html">ACOTAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="CrescentCity.html">Crescent City</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                             <a href="Fanart.html">Fanart</a>
+                        </li>
+                        <li>
+                            <a href="Eventos.html">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="Redessociales.html">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </a>
+            </button>
+        </nav>
+        <span style="font-size:45px;cursor:pointer; color: #f1f1f1;" onclick="openNav()">&#9776;</span>
+    </header>
+<!--AQUÍ INICI MI PÁGINA-->
+    <main>
+        <div></div>
+        <div></div>
+        <div></div>
+        <section>
+            <form action="enviar.php" method="POST" enctype="text/plain">
+                <h3 class="titulo subtitulo overline">Registrate</h3>
+                    <fieldset class="registrate">
+                        <table>
+                            <tr>
+                                <label for="Usuario">Usuario</label>
+                                    <input type="text" name="Usuario" maxlength="10">
+                                <label for="nombreyApellido">Nombre y Apellido</label>
+                                    <input type="text" name="nombreyApellido" maxlength="40">
+                                <label for="mail">Mail</label>
+                                    <input type="text" name="mail" maxlength="30">
+                                <label for="password">Contraseña</label>
+                                    <input type="password" maxlength="10">
+                            </tr>
+                            <tr>
+                                <h4>¿Cuál es tu saga y libros favorita de la autora?</h4>
+                                <label for="sagafav">TOG
+                                    <input type="radio" name="sagafav">
+                                        <select name="librosTOG">
+                                            <option value="ThroneofGlass">Throne of Glass</option>
+                                            <option value="CrownofMidnight">Crown of Midnight</option>
+                                            <option value="HeirofFire">Heir of Fire</option>
+                                            <option value="QueenofShadows">Queen of Shadows</option>
+                                            <option value="EmpireofStorms">Empire of Storms</option>
+                                            <option value="TowerofDawn">Tower of Dawn</option>
+                                            <option value="KingdomofAsh">Kingdom of Ash</option>
+                                            <option value="TheAssassin'sBlade">The Assassin's Blade</option>
+                                        </select>
+                                    </input>
+                                </label>
+                                <label for="sagafav">ACOTAR
+                                    <input type="radio" name="sagafav">
+                                        <select name="librosACOTAR">
+                                            <option value="AourtofThornsandRoses">A Court of Thorns and Roses</option>
+                                            <option value="ACourtofMistandFury">A Court of Mist and Fury</option>
+                                            <option value="ACourtofWingsandRuin">A Court of Wings and Ruin</option>
+                                            <option value="ACourtofFrostandStarlight">A Court of Frost and Starlight</option>
+                                            <option value="ACourtofSilverFlames">A Court of Silver Flames</option>
+                                        </select>
+                                    </input>
+                                </label>
+                                <label for="sagafav">Crescent City
+                                    <input type="radio" name="sagafav">
+                                        <select name="librosCC">
+                                            <option value="HouseofEarthandBlood">House of Earth and Blood</option>
+                                            <option value="HouseofSkyandBreath">House of Sky and Breath</option>
+                                        </select>
+                                    </input>
+                                </label>
+                                <label for="sagafav">Catwoman: Soulstealer
+                                    <input type="radio" name="sagafav"></input>
+                                </label>
+                            </tr>
+                        </table>
+                        <div>
+                            <h4 class="blanco">
+                                Quiero recibir información vía mail
+                            </h4>
+                            <input  type="checkbox" name="informaciónvíamail" value="1">
+                        </div>
+                        <div class="inputBotones">
+                            <input type="submit" name="submit" value="Enviar">
+                            <input type="reset" name="reset" value="Cancelar">
+                        </div>
+                    </fieldset>
+            </form>
+        </section> 
+    </main>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
+    </footer>
+</body>
+</html>
