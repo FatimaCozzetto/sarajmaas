@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Home</title>
 </head>
 <body>
@@ -70,8 +71,8 @@
                     </h2>
                 </div>
             </section>
-            <section id="eventos" class="border">
-                <h3 class="titulo subtitulo">
+            <section id="eventos" class="border wow animate__backInLeft">
+                <h3 class="titulo subtitulo wow animate__backInLeft">
                     EVENTOS
                 </h3>
                 <h4 class="evento blanco">Te invitamos a la premiere de "House of Sky and Breath", el segundo libro de la saga Crescent City.</h4>
@@ -86,9 +87,9 @@
                     </a>
                 </button>
             </section>
-            <section id="novedades" class="border">
+            <section id="novedades">
                 <article>
-                    <h3 class="titulo subtitulo naranja">
+                    <h3 class="titulo subtitulo naranja wow animate__backInRight">
                         LO ÚLTIMO DE LA AUTORA
                     </h3>
                 </article>
@@ -108,7 +109,7 @@
                 </div>
             </section>
             <section id="sagas" class="border">
-                <h3 class="titulo subtitulo">
+                <h3 class="titulo subtitulo wow animate__bounceIn">
                     TODAS SUS OBRAS
                 </h3>
                 <article>
@@ -152,5 +153,9 @@
 		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
 			    }
 	</script>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>    
 </body>
 </html>
