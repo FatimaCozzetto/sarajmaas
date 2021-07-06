@@ -594,3 +594,9 @@ div a   {
 	opacity: 1;
 	right: 0;
 }
+
+/*FANART*/
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}

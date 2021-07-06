@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
     <title>Registrate</title>
 </head>
@@ -74,8 +75,9 @@
                                 <label for="password">Contraseña</label>
                                 <input type="password" maxlength="10">
                             </tr>
+                            <br>
                             <tr>
-                                <h3>¿Cuál es tu saga y libros favorita de la autora?</h3>
+                                <h4>¿Cuál es tu saga y libros favorita de la autora?</h4>
                                 <label for="sagafav">TOG
                                     <input type="radio" name="sagafav">
                                         <select name="librosTOG">
@@ -114,12 +116,20 @@
                                 </label>
                             </tr>
                         </table>
-                        <div>
-                            <h3 class="blanco">
-                                Quiero recibir información vía mail
-                            </h3>
-                            <input  type="checkbox" name="informaciónvíamail" value="1">
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <h4>Contanos lo que quieras</h4>
+                                    <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+                                </div>
+                            </form>
                         </div>
+                        <form action="/action_page.php">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="switch1" name="example">
+                                <label class="custom-control-label" for="switch1">Quiero recibir información vía mail</label>
+                            </div>
+                        </form>
                         <div class="inputBotones">
                             <input type="submit" name="submit" value="Enviar">
                             <input type="reset" name="reset" value="Cancelar">
@@ -141,5 +151,8 @@
 		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
 			    }
 	</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
 </body>
 </html>

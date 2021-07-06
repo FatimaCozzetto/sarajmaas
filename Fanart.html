@@ -5,45 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
-    <title>Home</title>
+    <title>Fanart</title>
 </head>
 <body>
     <header>
-<!--MENÚ-->
-        <nav id="mySidenav">
+        <!--MENÚ-->
+        <nav class="mySidenav">
             <button class="MenuButton"> 
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
                     <ul>
                         <li>
                             <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
                         </li>
                         <li>
                             <a href="Sobrelaautora.html">Sobre la autora</a>
                         </li>
                         <li>
                             <a href="Libros.html">Libros</a>
-                            <ul>
-                                <li>
-                                    <a href="TOG.html">TOG</a>
-                                </li>
-                                <li>
-                                    <a href="ACOTAR.html">ACOTAR</a>
-                                </li>
-                                <li>
-                                    <a href="CrescentCity.html">Crescent City</a>
-                                </li>
-                                <li>
-                                    <a href="Catwoman.html">Catwoman: Soulstealer</a>
-                                </li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <a href="TOG.html">TOG</a>
+                                    </li>
+                                     <li>
+                                        <a href="ACOTAR.html">ACOTAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="CrescentCity.html">Crescent City</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                    </li>
+                                </ul>
                         </li>
                         <li>
-                            <a href="Fanart.html">Fanart</a>
+                             <a href="Fanart.html">Fanart</a>
                         </li>
                         <li>
                             <a href="Eventos.html">Eventos</a>
@@ -59,20 +61,60 @@
     </header>
 <!--AQUÍ INICI MI PÁGINA-->
     <main>
+        <h4 class="titulo subtitulo wow animate__backInLeft">Los mejores fanarts del universo de Sarah J. Maas</h4>
+        <div id="demo" class="carousel slide" data-ride="carousel">
 
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" width="1100" height="500">
+                <img src="img/Car1.jpg">
+              </div>
+              <div class="carousel-item" width="1100" height="500">
+                <img src="img/Car2.jpg">
+              </div>
+              <div class="carousel-item" width="1100" height="500">
+                <img src="img/Car3.jpg">
+              </div>
+              <div class="carousel-item" width="1100" height="500">
+                <img src="img/Car5.jpg">
+              </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
     </main>
-    <footer>
-        <h6>
-            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a> 	
-        </h6>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
     </footer>
     <script>
 		function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
 		function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
 	</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
