@@ -1,0 +1,29 @@
+$margin: 20px;
+
+#footer	{
+    color: #000d1a;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    text-align: center;
+    background-color: #ffffffc5;
+    padding-top: $margin;
+    margin-top: $margin;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: block;
+    justify-content: center;
+        a {
+            color: #000d1a;
+            text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+        }
+    @media (max-width: 480px) {
+        font-size: 0.6em;
+        padding-top: $margin/2;
+        margin-top: $margin/2;
+        height: 2vh; 
+    }
+}

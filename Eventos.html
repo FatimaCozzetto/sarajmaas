@@ -5,45 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Style.css">
-    <title>Home</title>
+    <title>Eventos</title>
 </head>
 <body>
     <header>
-<!--MENÚ-->
-        <nav id="mySidenav">
+        <!--MENÚ-->
+        <nav class="mySidenav">
             <button class="MenuButton"> 
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
                     <ul>
                         <li>
                             <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
                         </li>
                         <li>
                             <a href="Sobrelaautora.html">Sobre la autora</a>
                         </li>
                         <li>
                             <a href="Libros.html">Libros</a>
-                            <ul>
-                                <li>
-                                    <a href="TOG.html">TOG</a>
-                                </li>
-                                <li>
-                                    <a href="ACOTAR.html">ACOTAR</a>
-                                </li>
-                                <li>
-                                    <a href="CrescentCity.html">Crescent City</a>
-                                </li>
-                                <li>
-                                    <a href="Catwoman.html">Catwoman: Soulstealer</a>
-                                </li>
-                            </ul>
+                                <ul>
+                                    <li>
+                                        <a href="TOG.html">TOG</a>
+                                    </li>
+                                     <li>
+                                        <a href="ACOTAR.html">ACOTAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="CrescentCity.html">Crescent City</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                    </li>
+                                </ul>
                         </li>
                         <li>
-                            <a href="Fanart.html">Fanart</a>
+                             <a href="Fanart.html">Fanart</a>
                         </li>
                         <li>
                             <a href="Eventos.html">Eventos</a>
@@ -59,20 +60,25 @@
     </header>
 <!--AQUÍ INICI MI PÁGINA-->
     <main>
-
+        <section>
+            
+        </section> 
     </main>
-    <footer>
-        <h6>
-            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a> 	
-        </h6>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
     </footer>
     <script>
 		function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
 		function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
 	</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
 </body>
 </html>

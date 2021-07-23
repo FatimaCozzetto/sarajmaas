@@ -5,12 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel&display=swap" rel="stylesheet">
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Catwoman Soulstealer</title>
 </head>
 <body>
     <header>
@@ -62,20 +60,73 @@
     </header>
 <!--AQUÍ INICI MI PÁGINA-->
     <main>
-
+        <!--MENÚ DE LIBROS-->
+        <nav>
+            <ul class="menuLibros">
+                <li><a href="TOG.html">Trone of Glass</a></li>
+                <li><a href="ACOTAR.html">A Court of Thorns and Roses</a></li>
+                <li><a href="CrescentCity.html">Crescent City</a></li>
+                <li><a href="Catwoman.html">Catwoman Soulstealer</a></li>
+            </ul>
+        </nav>
+        <h1 class="portada fondoCatwoman titulo">
+            Catwoman Soulstealer
+        </h1>
+		<section>
+            <article class="evento blanco">
+                <p>
+                    Este es el tercer libro perteneciente a una saga que hizo DC sobre sus personajes más icónicos, cada libro está escrito por un autor distinto. 
+                </p>
+                <p>
+                    En primer ligar tenesmos Wonder Woman Warbringer escrito por Leigh Bardugo, luego nos encontramos con Batman Nightwalker de Marie Lu, el tercero es Catwoman Soulstealer de Sarah J. Maas, el cuarto libro de esta saga es Superman Dawnbreaker escrito por Matt de la Pena y en Dicimbre del 2020 se cerró esta serie de libros con Black Canary Breaking Silence escrito por Alexandra Monir.
+                </p>
+            </article>
+		</section>
+        <section>
+            <article class="titulo subtitulo naranja wow animate__bounceIn">
+                <h4>
+                    Libros de la saga
+                </h4>
+            </article>
+        </section>
+        <section class="contenedor">
+            <!--TARJETA CS-->
+            <article class="contenedorCards">
+                <div class="card">
+                    <h4 class="titulo cardTitulo">
+                        Catwoman Soulstealer
+                    </h4>
+                    <img src="img/Libros Catwoman.jpg" alt="CatwomanSoulstealer">
+                    <div>
+                        <p class="parrafo">
+                        Dos años después de escapar de los suburbios de Gotham City, Selina regresa como la misteriosa y rica Holly Vanderhees. Rápidamente descubre que con Batman en una misión vital, Batwing debe contener la marea de criminales notorios. Gotham City está lista para ser tomada.
+                        </p>
+                    </div>
+                    <button class="compraButton" style="vertical-align:middle"><a href="https://www.amazon.com/-/es/Sarah-J-Maas-ebook/dp/B077CQ6KW2/ref=sr_1_1?__mk_es_US=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=209DD95RDQCFB&dchild=1&keywords=catwoman+soulstealer&qid=1627056877&s=digital-text&sprefix=catwoman+soul%2Cdigital-text%2C352&sr=1-1" target="_blank">
+                        <span>
+                            Click para conseguirlo
+                        </span>
+                    </a></button> 
+                </div>
+            </article>
+        </section>
     </main>
-    <footer>
-        <h6>
-            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a> 	
-        </h6>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
     </footer>
     <script>
 		function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
 		function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
 	</script>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script> 
 </body>
 </html>

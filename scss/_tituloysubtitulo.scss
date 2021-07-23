@@ -1,0 +1,31 @@
+$fontsize: 2em;
+
+.titulo {
+    color: #f2f2f2;
+	font-family: 'Cinzel', serif;
+	font-size: $fontsize+4em;
+	text-align: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    @media (max-width: 480px) {
+        font-size: $fontsize;
+        font-family: 'Arvo', serif; 
+    }
+}
+
+@keyframes aparecer {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}
+
+.subtitulo {
+    font-size: 3em;
+    @media (max-width: 480px) {
+        font-size: ($fontsize)-0.5em;
+        font-family: 'Arvo', serif; 
+    }
+}

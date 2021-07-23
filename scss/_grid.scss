@@ -1,0 +1,37 @@
+#home {
+    display: grid;
+    grid-template-areas: "portada portada portada"
+    "eventos novedades novedades"
+    "eventos sagas sagas";
+    grid-template-columns: 20% auto 15%;
+    grid-column-gap: 1px;
+    grid-row-gap: 50px;
+    justify-items: stretch;
+    align-items: stretch;
+    }
+
+#portada  {
+    grid-area: portada;
+}
+
+#eventos {
+    width: 400px;
+}
+
+#novedades {
+    width: 850px;
+    justify-content: right;
+    justify-self: right;
+}
+    
+section#eventos {
+    grid-area: eventos;
+}
+    
+section#novedades {
+    grid-area: novedades;
+}
+
+section#sagas {
+    grid-area: sagas;
+}

@@ -1,0 +1,36 @@
+body {
+    background-color: #000d1a;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 100px;
+}
+
+.articleNovedades {
+    color: #f2f2f2;
+    margin: 10px 30px 20px 30px;
+    padding: 0px 20px 10px 20px;
+	font-family: 'Arvo', serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.promocion {
+    font-weight: bold;
+	font-size: 2em;
+	color: #fc8618;
+}
+
+.evento {
+    font-size: 1.2em;
+    text-align: left;
+    font-family: 'Arvo', serif;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.overline {
+    text-decoration: overline;
+}

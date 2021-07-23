@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/animate.css">
     <title>Crescent City</title>
 </head>
 <body>
@@ -68,7 +69,71 @@
                 <li><a href="Catwoman.html">Catwoman Soulstealer</a></li>
             </ul>
         </nav>
-       
+        <h1 class="portada fondoCC titulo">
+            Crescent City
+        </h1>
+		<section>
+            <article class="evento blanco">
+                <p>
+                    Con personajes inolvidables, un romance apasionante y un suspenso adictivo, esta nueva e inventiva serie de fantasía explora el dolor de la pérdida, el precio de la libertad y el poder del amor. 
+                </p>
+                <p>
+                    Con esta saga, Sarah J. Maas sale totalmente de su zona de confort, ya que es su primer libro de fantasía adulta que ha escrito.
+                </p>
+                <p>
+                    Se planea que sea una trilogía, hoy por hoy solo está disponible solo el primero, y esperamos el segundo para Enero del 2022.
+                </p>
+            </article>
+		</section>
+        <section>
+            <article class="titulo subtitulo naranja wow animate__bounceIn">
+                <h4>
+                    Libros de la saga
+                </h4>
+            </article>
+        </section>
+        <section class="contenedor">
+            <!--TARJETA HOEAB-->
+            <article class="contenedorCards">
+                <div class="card">
+                    <h4 class="titulo cardTitulo">
+                        House of Earth and Blood
+                    </h4>
+                    <img src="img/Libros HOEAB.jpg" alt="HouseofEarthandBlood">
+                    <div>
+                        <p class="parrafo">
+                            Bryce tenía la vida perfecta, hasta que un demonio asesina a sus amigos, ella hará lo que sea para vengar sus muertes junto a Hunt, un ángel caido esclavo de los arcángeles.
+                            Mientras investigan en las entrañas de Crescent City, descubren dos cosas: un poder oscuro que amenaza todo lo que desean proteger y una atracción feroz que podría liberarlos a ambos.
+                        </p>
+                    </div>
+                    <button class="compraButton" style="vertical-align:middle"><a href="https://www.amazon.com/Sarah-J-Maas-ebook/dp/B07QBC8QTP/ref=pd_sim_8/140-9770694-0465813?pd_rd_w=l9099&pf_rd_p=bc5856f7-ca30-40b6-8d37-7814a2494e00&pf_rd_r=1V1Y4N7TNGMFYDAG3XJ3&pd_rd_r=d23a5467-a5a2-4f71-9b23-3898e4dfe8f1&pd_rd_wg=89FHt&pd_rd_i=B07QBC8QTP&psc=1" target="_blank">
+                        <span>
+                            Click para conseguirlo
+                        </span>
+                    </a></button> 
+                </div>
+            </article>
+            <!--TARJETA HOSAB-->
+            <article class="contenedorCards">
+                <div class="card">
+                    <h4 class="titulo cardTitulo">
+                        House of Sky and Breath
+                    </h4>
+                    <img src="img/Libros HOSAB.jpg" alt="HouseofSkyandBreath">
+                    <div>
+                        <p class="parrafo">
+                            Con los rebeldes socavando el poder de los Asteri, la amenaza que representan los gobernantes está creciendo. A medida que Bryce, Hunt y sus amigos se involucran en los planes de los rebeldes, la elección se vuelve clara: permanecer en silencio mientras otros están oprimidos o luchar por lo que es correcto.
+                        </p>
+                        <p>Dispoible el 25 de Enero del 2022.</p>
+                    </div>
+                    <button class="compraButton" style="vertical-align:middle"><a href="https://www.amazon.com/-/es/Sarah-J-Maas-ebook/dp/B093WB84G1/ref=pd_sim_1/140-9770694-0465813?pd_rd_w=nSqF0&pf_rd_p=bc5856f7-ca30-40b6-8d37-7814a2494e00&pf_rd_r=WCK1X53EWSK4BN644BXN&pd_rd_r=8fda053f-c26a-4ef6-9432-efbe547c19eb&pd_rd_wg=rC9kS&pd_rd_i=B093WB84G1&psc=1" target="_blank">
+                        <span>
+                            Click para conseguirlo
+                        </span>
+                    </a></button> 
+                </div>
+            </article>
+        </section>
     </main>
     <footer id="footer">
         <span>
@@ -83,5 +148,9 @@
 		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
 			    }
 	</script>
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script> 
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Envianos tu fanart</title>
+</head>
+<body>
+    <header>
+        <!--MENÚ-->
+        <nav class="mySidenav">
+            <button class="MenuButton"> 
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;
+                    <ul>
+                        <li>
+                            <a href="Index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="Registrate.html">Registrate</a>
+                        </li>
+                        <li>
+                            <a href="Sobrelaautora.html">Sobre la autora</a>
+                        </li>
+                        <li>
+                            <a href="Libros.html">Libros</a>
+                                <ul>
+                                    <li>
+                                        <a href="TOG.html">TOG</a>
+                                    </li>
+                                     <li>
+                                        <a href="ACOTAR.html">ACOTAR</a>
+                                    </li>
+                                    <li>
+                                        <a href="CrescentCity.html">Crescent City</a>
+                                    </li>
+                                    <li>
+                                        <a href="Catwoman.html">Catwoman: Soulstealer</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                             <a href="Fanart.html">Fanart</a>
+                        </li>
+                        <li>
+                            <a href="Eventos.html">Eventos</a>
+                        </li>
+                        <li>
+                            <a href="Redessociales.html">Redes Sociales</a>
+                        </li>
+                    </ul>
+                </a>
+            </button>
+        </nav>
+        <span style="font-size:45px;cursor:pointer; color: #f1f1f1;" onclick="openNav()">&#9776;</span>
+    </header>
+<!--AQUÍ INICI MI PÁGINA-->
+    <main>
+        <section>
+            <form action="enviar.php" method="POST" enctype="text/plain">
+                <h3 class="titulo subtitulo overline">Envianos tu fanart</h3>
+                    <fieldset class="registrate">
+                        <table>
+                            <tr>
+                                <label for="Usuario">Usuario</label>
+                                <input type="text" name="Usuario" maxlength="10">
+                                <label for="password">Contraseña</label>
+                                <input type="password" maxlength="10">
+                            </tr>
+                            <br>
+                        </table>
+                        <div class="container">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                    <h4>Envianos tu fanart</h4>
+                                    <input type="file" name="archivo">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="inputBotones">
+                            <input type="submit" name="submit" value="Enviar">
+                            <input type="reset" name="reset" value="Cancelar">
+                        </div>
+                    </fieldset>
+            </form>
+        </section> 
+    </main>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
+    </footer>
+    <script>
+		function openNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
+		function closeNav() {
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
+	</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
+</body>
+</html>

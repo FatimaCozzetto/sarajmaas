@@ -1,0 +1,70 @@
+a:hover {
+	text-decoration: underline;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorCards {
+	padding: 0px 10px 0px 10px;
+    margin: 0 15px 0px 15px;
+        &:hover {
+            transform: translateY(-20px);
+        }
+}
+
+.card { 
+    height: 950px;
+    max-width: 200px;
+	color: #f2f2f2;
+	padding: 20px;
+    justify-content: flex-start;
+    margin: 10px 20px 60px 20px;
+    border-style: solid;
+    border-color: #f2f2f2;
+}
+
+article h4  {
+    height: 60px;
+}
+
+div > p {
+	font-family: 'Arvo', serif;
+    font-size: 1.2em;
+}
+
+div a {
+    text-decoration: none;
+}
+
+.fondoTOG {
+    background-image: url("../img/TOG\ portada\ 3.jpg");
+}
+
+.fondoACOTAR {
+    background-image: url("../img/ACOTAR\ portada\ 2\ op.jpg");
+}
+
+.fondoCC {
+    background-image: url("../img/CC\ portada.png");
+}
+
+.fondoCatwoman {
+    background-image: url("../img/Catwoman\ portada.jpg");
+}
+
+.portadaCC {
+    background-image: url("../img/Crescent\ City\ portada.jpg");
+}
+
+.cardTitulo {
+    padding: 0 10px 30px 10px;
+    margin-bottom: 30px;
+    max-width: 200px;
+	text-align: center;
+	font-size: 1.7em;
+	font-weight: normal;
+}
