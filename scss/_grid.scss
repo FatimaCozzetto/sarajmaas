@@ -35,3 +35,40 @@ section#novedades {
 section#sagas {
     grid-area: sagas;
 }
+
+#redes {
+    display: grid;
+    grid-template-areas: "icfacebook facebook facebook"
+    "icinstagram instagram instagram"
+    "icyoutube youtube youtube";
+    grid-template-columns: 20% auto 15%;
+    grid-column-gap: 1px;
+    grid-row-gap: 50px;
+    justify-items: stretch;
+    align-items: stretch;
+    }
+
+section#icyoutube {
+    grid-area: icyoutube;
+}
+
+section#youtube {
+    grid-area: youtube;
+}
+
+section#icinstagram {
+    grid-area: icinstagram;
+}
+
+section#instagram {
+    grid-area: instagram;
+}
+
+section#icyoutube {
+    grid-area: icyoutube;
+}
+
+section#youtube {
+    grid-area: youtube;
+}
+

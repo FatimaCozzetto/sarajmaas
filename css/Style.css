@@ -1,17 +1,515 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 15 | @import "padding";
- *    |         ^^^^^^^^^
- *    '
- *   scss\style.scss 15:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 15 \2502  @import \"padding\";\a    \2502          ^^^^^^^^^\a    \2575 \a   scss\\style.scss 15:9  root stylesheet";
+@charset "UTF-8";
+body {
+  background-color: #000d1a;
+  margin: 0;
+  padding: 0;
 }
+
+main {
+  min-height: 100px;
+}
+
+.articleNovedades {
+  color: #f2f2f2;
+  margin: 10px 30px 20px 30px;
+  padding: 0px 20px 10px 20px;
+  font-family: "Arvo", serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.promocion {
+  font-weight: bold;
+  font-size: 2em;
+  color: #fc8618;
+}
+
+.evento {
+  font-size: 1.2em;
+  text-align: left;
+  font-family: "Arvo", serif;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.overline {
+  text-decoration: overline;
+}
+
+.titulo {
+  color: #f2f2f2;
+  font-family: "Cinzel", serif;
+  font-size: 6em;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 2em;
+    font-family: "Arvo", serif;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.subtitulo {
+  font-size: 3em;
+}
+@media (max-width: 480px) {
+  .subtitulo {
+    font-size: 1.5em;
+    font-family: "Arvo", serif;
+  }
+}
+
+.portada {
+  background-size: 100%;
+  margin-top: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+}
+
+.blanco {
+  color: #f2f2f2;
+}
+
+.naranja {
+  color: #fc8618;
+}
+
+.parrafo {
+  color: #f2f2f2;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  text-align: left;
+}
+@media (max-width: 480px) {
+  .parrafo {
+    font-size: 1em;
+    line-height: 22px;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+  }
+}
+
+.MenuButton {
+  background-color: transparent;
+  list-style: none;
+  border: none;
+  text-align: left;
+}
+
+.mySidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  background-image: url("../img/ACOTARMontañas.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 0;
+}
+.mySidenav a {
+  text-decoration: none;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: #818181;
+  font-family: "Arvo", serif;
+  overflow: hidden;
+}
+.mySidenav a:hover {
+  color: #f2f2f2;
+}
+@media (max-width: 480px) {
+  .mySidenav {
+    background-image: none;
+  }
+}
+
+.closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#footer {
+  color: #000d1a;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1em;
+  text-align: center;
+  background-color: #ffffffc5;
+  padding-top: 20px;
+  margin-top: 20px;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: block;
+  justify-content: center;
+}
+#footer a {
+  color: #000d1a;
+  text-decoration: none;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 480px) {
+  #footer {
+    font-size: 0.6em;
+    padding-top: 10px;
+    margin-top: 10px;
+    height: 2vh;
+  }
+}
+
+.Pindex {
+  background-image: url("../img/Home.jpg");
+}
+
+.border {
+  border: 1px;
+  background: transparent;
+}
+
+.article img {
+  padding: 0px 10px 0 20px;
+}
+
+.flex {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  padding: 0px 20px 60px 20px;
+}
+
+.flexlibros {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: center;
+  margin-inline: 50px;
+}
+.flexlibros img {
+  width: 12vw;
+  height: 40vh;
+}
+
+div > img {
+  margin-right: 5px;
+}
+
+#home {
+  display: grid;
+  grid-template-areas: "portada portada portada" "eventos novedades novedades" "eventos sagas sagas";
+  grid-template-columns: 20% auto 15%;
+  grid-column-gap: 1px;
+  grid-row-gap: 50px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+#portada {
+  grid-area: portada;
+}
+
+#eventos {
+  width: 400px;
+}
+
+#novedades {
+  width: 850px;
+  justify-content: right;
+  justify-self: right;
+}
+
+section#eventos {
+  grid-area: eventos;
+}
+
+section#novedades {
+  grid-area: novedades;
+}
+
+section#sagas {
+  grid-area: sagas;
+}
+
+#redes {
+  display: grid;
+  grid-template-areas: "icfacebook facebook facebook" "icinstagram instagram instagram" "icyoutube youtube youtube";
+  grid-template-columns: 20% auto 15%;
+  grid-column-gap: 1px;
+  grid-row-gap: 50px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+section#icyoutube {
+  grid-area: icyoutube;
+}
+
+section#youtube {
+  grid-area: youtube;
+}
+
+section#icinstagram {
+  grid-area: icinstagram;
+}
+
+section#instagram {
+  grid-area: instagram;
+}
+
+section#icyoutube {
+  grid-area: icyoutube;
+}
+
+section#youtube {
+  grid-area: youtube;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.registrate {
+  font-family: "Arvo", serif;
+  background-image: linear-gradient(#f2f2f280, #000d1a);
+  color: #f2f2f2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+input {
+  font-family: "Cinzel", serif;
+  background-color: #000d1a;
+  color: #f2f2f2;
+  width: 30%;
+}
+
+.inputBotones {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+select, option {
+  font-family: "Arvo", serif;
+  background-color: #000d1a;
+  color: #f2f2f2;
+  width: 70%;
+  font-size: 1em;
+}
+
+.flexContainer {
+  background-image: linear-gradient(#f2f2f280, #03070a);
+  color: #000d1a;
+  margin: 30px 10px 40px 15px;
+  padding: 15px 20px 40px 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.flexContainer div {
+  font-family: "Arvo", serif;
+}
+
+.lista {
+  background-color: transparent;
+  margin: 10px 30px 0 30px;
+  list-style-type: circle;
+  margin-left: 20px;
+  font-family: "Arvo", serif;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.flexfotos {
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.transitionFotos:hover {
+  height: 25%;
+  width: 25%;
+  transition: height 2s, width 1s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorCards {
+  padding: 0px 10px 0px 10px;
+  margin: 0 15px 0px 15px;
+}
+.contenedorCards:hover {
+  transform: translateY(-20px);
+}
+
+.card {
+  height: 950px;
+  max-width: 200px;
+  color: #f2f2f2;
+  padding: 20px;
+  justify-content: flex-start;
+  margin: 10px 20px 60px 20px;
+  border-style: solid;
+  border-color: #f2f2f2;
+}
+
+article h4 {
+  height: 60px;
+}
+
+div > p {
+  font-family: "Arvo", serif;
+  font-size: 1.2em;
+}
+
+div a {
+  text-decoration: none;
+}
+
+.fondoTOG {
+  background-image: url("../img/TOGportada3.jpg");
+}
+
+.fondoACOTAR {
+  background-image: url("../img/ACOTARportada2 op.jpg");
+}
+
+.fondoCC {
+  background-image: url("../img/CCportada.png");
+}
+
+.fondoCatwoman {
+  background-image: url("../img/Catwomanportada.jpg");
+}
+
+.portadaCC {
+  background-image: url("../img/CrescentCityportada.jpg");
+}
+
+.cardTitulo {
+  padding: 0 10px 30px 10px;
+  margin-bottom: 30px;
+  max-width: 200px;
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.menuLibros {
+  list-style-type: none;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+  background-color: #ffffffd0;
+  display: flex;
+  flex-direction: row;
+}
+.menuLibros li {
+  border-right: 1px solid #000d1a;
+}
+.menuLibros li a {
+  display: block;
+  text-align: center;
+  color: #000d1a;
+  font-size: 1.1em;
+  padding: 14px 16px;
+  font-family: "Arvo", serif;
+  text-decoration: none;
+}
+.menuLibros li a:hover {
+  background-color: #000d1a;
+  color: #f2f2f2;
+}
+
+.tituloLibros {
+  font-size: 3em;
+}
+
+.compraButton {
+  display: block;
+  background-color: #DC5B22;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 10px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.compraButton a {
+  color: #f2f2f2;
+}
+@media (max-width: 480px) {
+  .compraButton {
+    font-size: 1em;
+  }
+}
+
+.compraButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.compraButton span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.compraButton span:after:hover {
+  opacity: 1;
+  right: 0;
+}
+.compraButton span:hover {
+  padding-right: 25px;
+}
+
+/*# sourceMappingURL=Style.css.map */

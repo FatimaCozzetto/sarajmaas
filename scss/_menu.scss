@@ -13,13 +13,14 @@
 	top: 0;
 	left: 0;
 	background-color: #000000;
-	background-image: url("../img/ACOTAR\ Montañas.png"); 
+	background-image: url("../img/ACOTARMontañas.png"); 
 	background-repeat: no-repeat; 
 	background-position-x: center;
 	background-position-y: center;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
+	z-index: 0;
         a {
             text-decoration: none;
 	        padding: 8px 8px 8px 32px;
