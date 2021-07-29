@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Podrás enviarnos todos los fanarts que tengas sobre los personajes creados por Sarah J. Maas.">
+    <meta name="keywords" content="Fanart, envianos, enviar, archivo, adjuntar, seleccionar, usuario, cancelar">
+    <meta property="og:title" content="Formulario, envianos todos tus fanarts.">
+    <meta property="og:url" content="https://sarahj.maas.com.ar/Formulariofanart">
+    <meta property="og:image" content="https://sarahj.maas.com.ar/FAACOTAR2.jpg">
+    <meta property="og:description" content="Enviarnos todos los fanarts que tengas sobre los personajes creados por Sarah J. Maas.">
+    <meta property="og:locale" content="es_AR">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/Style.css">
-    <title>Envianos tu fanart</title>
+    <title>Formulario, envianos todos tus fanarts.</title>
 </head>
 <body>
     <header>
@@ -67,9 +75,9 @@
                         <table>
                             <tr>
                                 <label for="Usuario">Usuario</label>
-                                <input type="text" name="Usuario" maxlength="10">
+                                <input type="text" name="Usuario" maxlength="100">
                                 <label for="password">Contraseña</label>
-                                <input type="password" maxlength="10">
+                                <input type="password" maxlength="100">
                             </tr>
                             <br>
                         </table>
@@ -77,13 +85,13 @@
                             <form action="/action_page.php">
                                 <div class="form-group">
                                     <h4>Envianos tu fanart</h4>
-                                    <input type="file" name="archivo">
+                                    <input type="file" name="archivo" style="font-size:95%;">
                                 </div>
                             </form>
                         </div>
                         <div class="inputBotones">
-                            <input type="submit" name="submit" value="Enviar">
-                            <input type="reset" name="reset" value="Cancelar">
+                            <input type="submit" name="submit" value="Enviar" style="font-size:75%;">
+                            <input type="reset" name="reset" value="Cancelar" style="font-size:75%;">
                         </div>
                     </fieldset>
             </form>

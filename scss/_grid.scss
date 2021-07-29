@@ -1,3 +1,5 @@
+/*GRID DE INDEX*/
+
 #home {
     display: grid;
     grid-template-areas: "portada portada portada"
@@ -36,16 +38,18 @@ section#sagas {
     grid-area: sagas;
 }
 
+/*GRID DE REDES SOCIALES*/
+
 #redes {
     display: grid;
-    grid-template-areas: "icfacebook facebook facebook"
-    "icinstagram instagram instagram"
-    "icyoutube youtube youtube";
-    grid-template-columns: 20% auto 15%;
-    grid-column-gap: 1px;
+    grid-template-areas: "icfacebook icinstagram icyoutube"
+    "facebook instagram youtube"
+    "facebook instagram youtube";
+    grid-template-columns: auto auto auto;
+    grid-gap: 5%;
     grid-row-gap: 50px;
-    justify-items: stretch;
-    align-items: stretch;
+    justify-content: start;
+    align-content: center;
     }
 
 section#icyoutube {
@@ -72,3 +76,42 @@ section#youtube {
     grid-area: youtube;
 }
 
+.fa {
+    padding: 20px;
+    font-size: 50px;
+    width: 100px;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    margin: 0 30% 0 30%;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+        &:hover {
+            background: white;
+            color: #3B5998;
+            text-decoration: none;
+        }
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+        &:hover {
+            background: white;
+            color: #125688;
+            text-decoration: none;
+        }
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+        &:hover {
+            background: white;
+            color: #bb0000;
+            text-decoration: none;
+        }
+  }

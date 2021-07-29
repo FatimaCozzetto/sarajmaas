@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Las redes sociales que más utiliza la autora para dar a conocer sus eventos y novedades sobre sus libros son Facebook, Instagram y Youtube.">
+    <meta name="keywords" content="Redes, sociales, Facebook, Instagram, Youtube, conocer, personal, conectar, seguir">
+    <meta property="og:title" content="Redes sociales, enterate de todas las novedades de Sarah J. Maas">
+    <meta property="og:url" content="https://sarahj.maas.com.ar/RedesSociales">
+    <meta property="og:image" content="https://sarahj.maas.com.ar/Sarah4.jpg">
+    <meta property="og:description" content="Las redes sociales que más utiliza la autora para dar a conocer sus eventos y novedades sobre sus libros son Facebook, Instagram y Youtube.">
+    <meta property="og:locale" content="es_AR">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    <title>Redes sociales</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <title>Redes sociales, enterate de todas las novedades de Sarah J. Maas.</title>
 </head>
 <body>
     <header>
@@ -60,42 +70,47 @@
     </header>
 <!--AQUÍ INICI MI PÁGINA-->
     <main>
-        <div id="redes">
-            <!--FACEBOOK-->
-            <section id="icfacebook" class="border">
-                <img src="img/facebook.png" alt="logo de Facebook">
-            </section>
-            <section id="facebook" class="border">
-                <a href="https://www.facebook.com/profile.php?id=100044441076027" target="_blank"></a>
-            </section>
-            <!--INSTAGRAM-->
-            <section id="icinstagram" class="instagram">
-                <img src="img/instagram.png" alt="logo de Instagram">
-            </section>
-            <section id="instagram" class="border">
-                <a href="https://www.instagram.com/therealsjmaas/?hl=es"></a>
-            </section>
-            <!--YOUTUBE-->
-            <section id="icyoutube" class="border">
-|               <img src="img/youtube.png" alt="border">
-            </section>
-            <section id="youtube" class="border">
-                <a href="https://www.youtube.com/channel/UCoFSJAXNoEp66P7g42w_IUw"><iframe width="560" height="315" src="https://www.youtube.com/embed/m6UkGBwtIiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
-            </section>
-        </div>
+        <h1 class="titulo subtitulo">Seguila en sus redes</h1>
+        <section class="contenedor">
+            <div id="redes">
+                <!--FACEBOOK-->
+                <section id="icfacebook">
+                    <a href="https://www.facebook.com/profile.php?id=100044441076027" class="fa fa-facebook" target="_blank"></a>
+                </section>
+                <section id="facebook">
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100044441076027&tabs=timeline&width=400&height=480&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="380" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                </section>
+                <!--INSTAGRAM-->
+                <section id="icinstagram" class="instagram">
+                    <a href="https://www.instagram.com/therealsjmaas/?hl=es" class="fa fa-instagram" target="_blank"></a>
+                </section>
+                <section id="instagram">
+                    <iframe src="https://www.instagram.com/p/COdQxP1MoQU/embed" width="300" height="380" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                </section>
+                <!--YOUTUBE-->
+                <section id="icyoutube">
+                    <a href="https://www.youtube.com/channel/       UCoFSJAXNoEp66P7g42w_IUw" class="fa fa-youtube" target="_blank"></a>
+                </section>
+                <section id="youtube">
+                    <iframe width="460" height="215" src="https://www.youtube.com/embed/m6UkGBwtIiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+            </div>
     </main>
-    <footer>
-        <h6>
-            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a> 	
-        </h6>
+    <footer id="footer">
+        <span>
+            Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
+        </span> 
     </footer>
     <script>
 		function openNav() {
-		document.getElementById("mySidenav").style.width = "100%";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
+			    }
 		function closeNav() {
-		document.getElementById("mySidenav").style.width = "0";
-			}
+		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
+			    }
 	</script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
 </body>
 </html>
