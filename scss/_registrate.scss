@@ -17,6 +17,12 @@
     margin: auto;
     margin-bottom: 50px;
     align-items: flex-start;
+
+    @media (max-width: 820px) {
+        background-image: none; 
+        width: 100%;
+        padding: auto;
+    }
 }
 
 input {
@@ -31,6 +37,11 @@ input {
     padding: 30px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        width: 100%;
+        font-size: 0.8em;
+    }
 }
 
 select, option	{
@@ -39,4 +50,11 @@ select, option	{
 	color: #f2f2f2;
     width: 70%;
     font-size: 1em;
+}
+
+.sagafav {
+    @media (max-width: 480px) {
+        font-size: 1.1em;
+        padding: 30px;
+    }
 }

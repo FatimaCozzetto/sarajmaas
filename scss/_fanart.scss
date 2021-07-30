@@ -6,10 +6,20 @@
     z-index: 0;
 }
 
+
 .carousel-item {
     z-index: 0;
 }
 
 .active {
     z-index: 0;
+}
+
+/*FORMULARIO ENVIA DE FANART*/
+
+.registrate container > input {
+
+    @media (max-width: 820px) {
+        font-size: 50%; 
+    }
 }

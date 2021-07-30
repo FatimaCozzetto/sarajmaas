@@ -13,6 +13,30 @@
         div {
             font-family: 'Arvo', serif;
         }
+    
+    @media (max-width: 820px) {
+        background-image: none;
+        margin: auto;
+        padding: auto;
+        width: auto;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+
+    img {
+        @media (max-width: 480px) {
+            width: 100%;
+        }
+    }
+}
+
+.principalsarah {
+    @media (max-width: 480px) {
+
+        width: 100%;
+    }
 }
 
 .lista {

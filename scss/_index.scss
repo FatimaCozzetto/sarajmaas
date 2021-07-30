@@ -1,5 +1,11 @@
 .Pindex {
     background-image: url("../img/Home.jpg");
+    padding: auto;
+
+    @media (max-width: 480px) {
+        padding: 0;
+        margin: 0; 
+    }
 }
 
 .border {
@@ -21,6 +27,14 @@
     flex-wrap: wrap;
     flex-flow: row wrap;
     padding: 0px 20px 60px  20px; 
+
+    @media (max-width: 820px) {
+        padding: auto;
+    }
+
+    @media (max-width: 480px) {
+        padding: 0; 
+    }
 }
 
 .flexlibros {
@@ -31,9 +45,24 @@
         img {
             width: 12vw;
             height: 40vh;
+
+            @media (max-width: 820px) {
+                width: 20%;
+                height: 20%;
+            }
+
+            @media (max-width: 480px) {
+                width: 35%;
+                height: 35%; 
+            }
+
         }
 }
 
 div > img {
     margin-right: 5px;
+
+    @media (max-width: 480px) {
+        margin: 0; 
+    }
 }

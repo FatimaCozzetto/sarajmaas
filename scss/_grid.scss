@@ -10,20 +10,57 @@
     grid-row-gap: 50px;
     justify-items: stretch;
     align-items: stretch;
+
+    @media (max-width: 820px) {
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 0;
+        grid-row-gap: 0px;
+        grid-template-areas: "portada portada portada"
+        "eventos eventos eventos"
+        "novedades novedades novedades"
+        "sagas sagas sagas";
     }
+
+    @media (max-width: 480px) {
+        margin: 0;
+        padding: 0;
+    }
+}
 
 #portada  {
     grid-area: portada;
+
+    @media (max-width: 480px) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 #eventos {
-    width: 400px;
+    width: 80%;
+
+    @media (max-width: 480px) {
+        width: 100%; 
+    }
+
+    @media (max-width: 480px) {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 #novedades {
     width: 850px;
     justify-content: right;
     justify-self: right;
+
+    @media (max-width: 820px) {
+        width: 70%;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%; 
+    }
 }
     
 section#eventos {
@@ -50,7 +87,22 @@ section#sagas {
     grid-row-gap: 50px;
     justify-content: start;
     align-content: center;
+
+    @media (max-width: 820px) {
+        grid-template-areas: "icfacebook facebook facebook"
+        "icinstagram instagram instagram"
+        "icyoutube youtube youtube"; 
+        grid-gap: 100px;
     }
+
+    @media (max-width: 480px) {
+        display:flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+}
 
 section#icyoutube {
     grid-area: icyoutube;
@@ -84,9 +136,13 @@ section#youtube {
     align-content: center;
     text-decoration: none;
     margin: 0 30% 0 30%;
-  }
+    @media (max-width: 480px) {
+        padding: 0;
+        margin: 0;
+    }
+}
   
-  .fa-facebook {
+.fa-facebook {
     background: #3B5998;
     color: white;
         &:hover {
@@ -94,9 +150,9 @@ section#youtube {
             color: #3B5998;
             text-decoration: none;
         }
-  }
+}
 
-  .fa-instagram {
+.fa-instagram {
     background: #125688;
     color: white;
         &:hover {
@@ -104,9 +160,9 @@ section#youtube {
             color: #125688;
             text-decoration: none;
         }
-  }
+}
 
-  .fa-youtube {
+.fa-youtube {
     background: #bb0000;
     color: white;
         &:hover {
@@ -114,4 +170,10 @@ section#youtube {
             color: #bb0000;
             text-decoration: none;
         }
-  }
+}
+
+.yout {
+    @media (max-width: 480px){
+        width: 100%;
+    }
+}
