@@ -142,8 +142,7 @@ main {
 }
 @media (max-width: 480px) {
   .portada {
-    padding: 0;
-    margin: 0;
+    height: auto;
   }
 }
 
@@ -336,6 +335,11 @@ div > img {
   div > img {
     margin: 0;
   }
+}
+
+#particles {
+  height: 100%;
+  background: #000d1a;
 }
 
 /*GRID DE INDEX*/
