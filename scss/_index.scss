@@ -1,6 +1,6 @@
 .Pindex {
     background-image: url("../img/Home.jpg");
-    padding: auto;
+    padding-top: 0;
 
     @media (max-width: 480px) {
         padding: 0;
@@ -65,9 +65,4 @@ div > img {
     @media (max-width: 480px) {
         margin: 0; 
     }
-}
-
-#particles {
-    height: 100%;
-    background: #000d1a;
 }
