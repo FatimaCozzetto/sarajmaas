@@ -19,14 +19,6 @@
         "sagas sagas sagas";
     }
 
-    @media (max-width: 767px) {
-        grid-template-columns: 100%;
-        grid-template-areas: "portada portada portada"
-        "eventos eventos eventos"
-        "novedades novedades novedades"
-        "sagas sagas sagas";
-    }
-
     @media (max-width: 479px) {
         margin: 0;
         padding: 0;
@@ -50,10 +42,6 @@
         width: 100%; 
     }
 
-    @media (max-width: 767px) {
-        width: 100%; 
-    }
-
     @media (max-width: 479px) {
         margin: 0;
         padding: 0;
@@ -67,10 +55,6 @@
   
     @media (max-width: 767px) {
         width: 100%;
-    }
-
-    @media (max-width: 479px) {
-        width: 100%; 
     }
 }
     
@@ -105,15 +89,8 @@ section#sagas {
         align-items: center;
     }
 
-    @media (max-width: 767px) {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     @media (max-width: 479px) {
-        display:flex;
-        flex-direction: column;
         padding: 0;
         margin: 0;
     }
@@ -207,16 +184,6 @@ section#youtube {
     align-items: center;
 
     @media (max-width: 1024ox) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media (max-width: 767px){
-        display: flex;
-        flex-direction: column;
-    }
-
-    @media (max-width: 479px){
         display: flex;
         flex-direction: column;
     }

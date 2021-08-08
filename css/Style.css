@@ -69,8 +69,6 @@
 @media (max-width: 479px) {
   #footer {
     font-size: 0.6em;
-    padding-top: 10px;
-    margin-top: 10px;
     height: 3vh;
   }
 }
@@ -163,12 +161,6 @@ main {
     grid-template-areas: "portada portada portada" "eventos eventos eventos" "novedades novedades novedades" "sagas sagas sagas";
   }
 }
-@media (max-width: 767px) {
-  #home {
-    grid-template-columns: 100%;
-    grid-template-areas: "portada portada portada" "eventos eventos eventos" "novedades novedades novedades" "sagas sagas sagas";
-  }
-}
 @media (max-width: 479px) {
   #home {
     margin: 0;
@@ -195,11 +187,6 @@ main {
     width: 100%;
   }
 }
-@media (max-width: 767px) {
-  #eventos {
-    width: 100%;
-  }
-}
 @media (max-width: 479px) {
   #eventos {
     margin: 0;
@@ -213,11 +200,6 @@ main {
   justify-self: right;
 }
 @media (max-width: 767px) {
-  #novedades {
-    width: 100%;
-  }
-}
-@media (max-width: 479px) {
   #novedades {
     width: 100%;
   }
@@ -252,17 +234,8 @@ section#sagas {
     align-items: center;
   }
 }
-@media (max-width: 767px) {
-  #redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
 @media (max-width: 479px) {
   #redes {
-    display: flex;
-    flex-direction: column;
     padding: 0;
     margin: 0;
   }
@@ -355,18 +328,6 @@ section#youtube {
   align-items: center;
 }
 @media (max-width: 1024ox) {
-  #eventosargentina {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 767px) {
-  #eventosargentina {
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media (max-width: 479px) {
   #eventosargentina {
     display: flex;
     flex-direction: column;
@@ -516,7 +477,6 @@ a:hover {
 }
 @media (max-width: 479px) {
   .contenedor {
-    padding: auto;
     margin: auto;
   }
 }
@@ -542,11 +502,6 @@ a:hover {
 @media (max-width: 1024px) {
   .card {
     width: auto;
-    height: auto;
-  }
-}
-@media (max-width: 479px) {
-  .card {
     height: auto;
   }
 }
@@ -603,6 +558,7 @@ div a {
   }
 }
 
+/*MENÚ GENERAL*/
 .MenuButton {
   background-color: transparent;
   list-style: none;
@@ -655,11 +611,6 @@ div a {
   }
 }
 @media (max-width: 767px) {
-  .mySidenav {
-    background-image: none;
-  }
-}
-@media (max-width: 479px) {
   .mySidenav {
     background-image: none;
   }
@@ -810,11 +761,6 @@ input {
     width: 90%;
   }
 }
-@media (max-width: 479px) {
-  input {
-    width: 90%;
-  }
-}
 
 /*REGISTRATE Y FORMULARIO*/
 .inputBotones {
@@ -831,7 +777,6 @@ input {
 }
 @media (max-width: 479px) {
   .inputBotones {
-    width: 100%;
     font-size: 0.8em;
   }
 }
@@ -941,16 +886,6 @@ select, option {
   font-family: "Arvo", serif;
 }
 @media (max-width: 1024px) {
-  .flexContainer {
-    flex-direction: column;
-  }
-}
-@media (max-width: 767px) {
-  .flexContainer {
-    flex-direction: column;
-  }
-}
-@media (max-width: 479px) {
   .flexContainer {
     flex-direction: column;
   }

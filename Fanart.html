@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!--REQUIRED META TAGS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
     <meta name="description" content="Acá podrás ver y enviarnos todos los fanarts de los personajes del Universo creado por Sarah J. Maas.">
     <meta name="keywords" content="Fanart, Sarah, Maas, universo, Rhysand, Feyre, Cassian, Azriel, Amren, Morrigan, Aelin, Rowan, Manon, Dorian, Abraxos">
+    <meta name="author" content="María de Fátima Cozzetto">
+    <!--FIN DE SEO-->
+    <!--OPEN GRAPH-->
+    <meta property="og:type" content="webside">
     <meta property="og:title" content="Fanart de los personajes del Universo creado por Sarah J. Maas.">
     <meta property="og:url" content="https://sarahjmaas.000webhostapp.com/Fanart.html">
     <meta property="og:image" content="https://sarahjmaas.000webhostapp.com/img/FAACOTAR1.jpg">
     <meta property="og:description" content="Mirá todos los fanarts de los personajes del Universo creado por Sarah J. Maas.">
     <meta property="og:locale" content="es_AR">
+    <!--FIN DE OPEN GRAPG-->
+    <!--SITEMAPS-->
     <link rel="stylesheet" href="robots.txt">
+    <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cinzel:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--W3SCHOOL PARA CARRUSEL-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--CSS-->
     <link rel="stylesheet" href="css/Style.css">
     <title>Fanart de los personajes del Universo creado por Sarah J. Maas.</title>
 </head>
@@ -69,6 +81,7 @@
             </button>
         </nav>
         <span style="font-size:45px;cursor:pointer; color: #f1f1f1;" onclick="openNav()">&#9776;</span>
+        <!--FIN DEL MENÚ-->
     </header>
 <!--AQUÍ INICI MI PÁGINA-->
     <main>
@@ -76,14 +89,14 @@
         <!--CARRUSEL-->
         <div class="container">
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
+              <!--INDICADORES-->
               <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
               </ol>
           
-              <!-- Wrapper for slides -->
+              <!--FOTOS DEL CARRUSEL-->
               <div class="carousel-inner">
                 <div class="item active">
                   <img src="img/Car1.jpg" alt="Aelin" style="width:100%;">
@@ -96,7 +109,7 @@
                 </div>
               </div>
           
-              <!-- Left and right controls -->
+              <!--CONTROLES DE DERECHA E IZQUIERDA-->
               <a class="left carousel-control" href="#myCarousel" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left"></span>
                 <span class="sr-only">Previous</span>
@@ -108,7 +121,7 @@
             </div>
         </div>
     </div>
-        
+        <!--SECTOR 1 DE IMÁGENES (FANART)-->
         <div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
             <div class="w3-half">
               <img src="img/FA1.jpg" alt="Feyre, Aelin y Bryce" style="width:100%">
@@ -119,7 +132,7 @@
               <img src="img/FAACOTAR5.jpg" alt="Rhysand" style="width:100%">
               <img src="img/FATOG4.jpg" alt="Aelin" style="width:100%">
             </div>
-          
+            <!--SECTOR 2 DE IMÁGENES (FANART)-->
             <div class="w3-half">
               <img src="img/FACC2.jpg" alt="Bryce y Hunt" style="width:100%">
               <img src="img/FACC3.jpg" alt="Bryce" style="width:100%">
@@ -129,6 +142,7 @@
               <img src="img/FATOG3.jpg" alt="Personajes principales de TOG" style="width:100%">
             </div>
         </div>
+        <!--BOTÓN DE FORMULARIO (ENVIA TU FANART)-->
         <button class="compraButton" style="vertical-align:middle">
             <a href="Formulario.html" target="_blank">
                 <span>
@@ -137,11 +151,13 @@
             </a>
         </button>
     </main>
+    <!--FOOTER-->
     <footer id="footer">
         <span>
             Designed by Fátima Cozzetto | <a href="mailto:fatima.cozzetto@gmail.com">fatima.cozzetto@gmail.com</a>
         </span> 
     </footer>
+    <!--SCRIPT-->
     <script>
 		function openNav() {
 		    document.getElementsByClassName("mySidenav")[0].style.width = "100%";
@@ -150,8 +166,10 @@
 		    document.getElementsByClassName("mySidenav")[0].style.width = "0";
 			    }
 	</script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> <!-- CDN de Bootstrap del JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script><!-- CDN de la librería de Jquery  -->
+    <!--CDN DE BOOTSTRAP DEL JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--CDN DE LA LIBRERÍA DE JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

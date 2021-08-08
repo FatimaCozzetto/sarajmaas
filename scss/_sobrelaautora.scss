@@ -15,14 +15,6 @@
     @media (max-width: 1024px) {
         flex-direction: column;
     }
-    
-    @media (max-width: 767px) {
-        flex-direction: column;
-    }
-
-    @media (max-width: 479px) {
-        flex-direction: column;
-    }
 
     img {
         @media (max-width: 479px) {

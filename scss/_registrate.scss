@@ -42,10 +42,6 @@ input {
     @media (max-width: 1024px) {
         width: 90%;
     }
-
-    @media (max-width: 479px) {
-        width: 90%;
-    }
 }
 
 /*REGISTRATE Y FORMULARIO*/
@@ -62,7 +58,6 @@ input {
     }
 
     @media (max-width: 479px) {
-        width: 100%;
         font-size: 0.8em;
     }
 }
