@@ -1,0 +1,249 @@
+/*GRID DE INDEX*/
+#home {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "portada portada portada" "eventos novedades novedades" "sagas sagas sagas";
+  grid-template-columns: 20% auto 15%;
+  grid-column-gap: 1px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  #home {
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 0;
+    grid-template-areas: "portada portada portada" "eventos eventos eventos" "novedades novedades novedades" "sagas sagas sagas";
+  }
+}
+
+@media (max-width: 479px) {
+  #home {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#portada {
+  grid-area: portada;
+}
+
+@media (max-width: 479px) {
+  #portada {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #eventos {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  #eventos {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #novedades {
+    width: 70%;
+  }
+}
+
+@media (max-width: 479px) {
+  #novedades {
+    width: 100%;
+  }
+}
+
+section#eventos {
+  grid-area: eventos;
+}
+
+section#novedades {
+  grid-area: novedades;
+}
+
+section#sagas {
+  grid-area: sagas;
+}
+
+/*GRID DE REDES SOCIALES*/
+#redes {
+  display: grid;
+  grid-template-areas: "icfacebook icinstagram icyoutube" "facebook instagram youtube" "facebook instagram youtube";
+  grid-template-columns: auto auto auto;
+  grid-gap: 5%;
+  grid-row-gap: 50px;
+  justify-content: start;
+  align-content: center;
+}
+
+@media (max-width: 767px) {
+  #redes {
+    grid-template-areas: "icfacebook facebook facebook" "icinstagram instagram instagram" "icyoutube youtube youtube";
+    grid-gap: 100px;
+  }
+}
+
+@media (max-width: 479px) {
+  #redes {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+section#icyoutube {
+  grid-area: icyoutube;
+}
+
+section#youtube {
+  grid-area: youtube;
+}
+
+section#icinstagram {
+  grid-area: icinstagram;
+}
+
+section#instagram {
+  grid-area: instagram;
+}
+
+section#icyoutube {
+  grid-area: icyoutube;
+}
+
+section#youtube {
+  grid-area: youtube;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 100px;
+  text-align: center;
+  align-content: center;
+  text-decoration: none;
+  margin: 0 30% 0 30%;
+}
+
+@media (max-width: 479px) {
+  .fa {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-facebook:hover {
+  background: white;
+  color: #3B5998;
+  text-decoration: none;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-instagram:hover {
+  background: white;
+  color: #125688;
+  text-decoration: none;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-youtube:hover {
+  background: white;
+  color: #bb0000;
+  text-decoration: none;
+}
+
+@media (max-width: 479px) {
+  .yout {
+    width: 100%;
+  }
+}
+
+/*GRID DE EVENTOS*/
+#eventosargentina {
+  display: grid;
+  grid-template-areas: "calendario mapa mapa";
+  grid-template-columns: 40% 60%;
+  grid-column-gap: 30px;
+  padding: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  #eventosargentina {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 479px) {
+  #eventosargentina {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+section#calendario {
+  grid-area: calendario;
+}
+
+section#mapa {
+  grid-area: mapa;
+}
+
+/*IFRAME DE EVENTOS*/
+@media (max-width: 767px) {
+  .calendario {
+    width: 300px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 479px) {
+  .calendario {
+    width: 200px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mapa {
+    width: 400px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 479px) {
+  .mapa {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    height: 150px;
+  }
+}
+
+/*# sourceMappingURL=_grid.css.map */

@@ -1,0 +1,76 @@
+/*SECTOR "REGISTRATE"*/
+.form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.registrate {
+  font-family: 'Arvo', serif;
+  color: #f2f2f2;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  align-items: flex-start;
+}
+
+@media (max-width: 767px) {
+  .registrate {
+    background-image: none;
+    width: 100%;
+    padding: auto;
+  }
+}
+
+@media (max-width: 479px) {
+  .registrate {
+    width: 70%;
+  }
+}
+
+input {
+  font-family: 'Cinzel', serif;
+  background-color: #000d1a;
+  color: #f2f2f2;
+  width: 100%;
+}
+
+@media (max-width: 479px) {
+  input {
+    width: 100%;
+  }
+}
+
+.inputBotones {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 479px) {
+  .inputBotones {
+    width: 100%;
+    font-size: 0.8em;
+  }
+}
+
+select, option {
+  font-family: 'Arvo', serif;
+  background-color: #000d1a;
+  color: #f2f2f2;
+  width: 70%;
+  font-size: 1em;
+}
+
+@media (max-width: 479px) {
+  .sagafav {
+    font-size: 1.1em;
+    padding: 30px;
+  }
+}
+
+/*# sourceMappingURL=_registrate.css.map */

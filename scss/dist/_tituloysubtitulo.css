@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*TODOS LOS TÍTULOS Y SUBTÍTULOS*/
+.titulo {
+  color: #f2f2f2;
+  font-family: 'Cinzel', serif;
+  font-size: 6em;
+  text-align: center;
+  animation-duration: 2s;
+  animation-name: aparecer;
+}
+
+@media (max-width: 767px) {
+  .titulo {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 479px) {
+  .titulo {
+    font-size: 2em;
+    font-family: 'Arvo', serif;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.subtitulo {
+  font-size: 3em;
+}
+
+@media (max-width: 767px) {
+  .subtitulo {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 479px) {
+  .subtitulo {
+    font-size: 1.5em;
+    font-family: 'Arvo', serif;
+  }
+}
+
+/*# sourceMappingURL=_tituloysubtitulo.css.map */

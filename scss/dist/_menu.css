@@ -1,0 +1,54 @@
+@charset "UTF-8";
+.MenuButton {
+  background-color: transparent;
+  list-style: none;
+  border: none;
+  text-align: left;
+}
+
+.mySidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  background-image: url("../img/ACOTARMontañas.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.mySidenav a {
+  text-decoration: none;
+  padding: 8px 8px 8px 32px;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+  color: #818181;
+  font-family: 'Arvo', serif;
+  overflow: hidden;
+}
+
+.mySidenav a:hover {
+  color: #f2f2f2;
+}
+
+@media (max-width: 479px) {
+  .mySidenav {
+    background-image: none;
+  }
+}
+
+.closebtn {
+  position: absolute;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=_menu.css.map */
