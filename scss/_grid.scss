@@ -84,13 +84,17 @@ section#sagas {
     align-content: center;
 
     @media (max-width: 1024px) {
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        grid-template-areas: "icfacebook facebook facebook"
+        "icinstagram instagram instagram"
+        "icyoutube youtube youtube";
+        grid-gap: 20%;
+        grid-row-gap: 40px;
     }
 
 
     @media (max-width: 479px) {
+        display: flex;
+        flex-direction: column;
         padding: 0;
         margin: 0;
     }
@@ -187,6 +191,11 @@ section#youtube {
         display: flex;
         flex-direction: column;
     }
+
+    @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 section#calendario {
@@ -219,6 +228,11 @@ section#mapa {
 }
 
 .mapa {
+
+    @media (max-width: 1024px) {
+        width: 470px;
+        height: 320px; 
+    }
 
     @media (max-width: 767px) {
         width: 400px;

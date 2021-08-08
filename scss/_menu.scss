@@ -91,12 +91,15 @@
 
                     @media (max-width: 479px) {
                         padding: auto;
-                        font-size: 0.8em; 
-                        text-align: start;
-                        display: flex;
-                        flex-flow: row wrap;
-                        justify-content: start;
+                        font-size: 1em; 
                     }
                 }
+			@media (max-width: 479px) {
+				border-right: none;
+			}
         }
+	@media (max-width: 479px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }

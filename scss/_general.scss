@@ -43,13 +43,20 @@ main {
     font-family: 'Arvo', serif;
     padding-left: 20px;
     padding-top: 20px;
+    line-height: 28px;
 
     @media (max-width: 1024px) {
-        font-size: 1.7em;
+        font-size: 2em;
+        line-height: 50px;
     }
 
     @media (max-width: 767px) {
-        font-size: 1em;
+        font-size: 1.5em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 1.2em;
+        line-height : 28px; 
     }
 }
 

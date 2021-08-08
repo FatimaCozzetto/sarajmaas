@@ -30,7 +30,7 @@ a:hover {
 }
 
 .card { 
-    height: 950px;
+    height: 1100px;
     width: 200px;
 	color: #f2f2f2;
 	padding: 20px;
@@ -40,6 +40,11 @@ a:hover {
     border-color: #f2f2f2;
 
     @media (max-width: 1024px) {
+        height: 2000px;
+        width: 300px;
+    }
+
+    @media (max-width: 767px) {
         width: auto;
         height: auto;
     }
@@ -54,7 +59,12 @@ div > p {
     font-size: 1.2em;
 
     @media (max-width:1024px) {
-        font-size: 2em;
+        font-size: 2.3em;
+    }
+
+    @media (max-width: 479px) {
+        font-size: 1.2em;
+        line-height : 28px;
     }
 }
 
@@ -91,6 +101,6 @@ div a {
 	font-weight: normal;
 
     @media (max-width: 1024px) {
-        font-size: 3em;
+        font-size: 2em;
     }
 }

@@ -60,16 +60,12 @@
 }
 @media (max-width: 767px) {
   #footer {
-    font-size: 0.9em;
-    padding-top: 10px;
-    margin-top: 10px;
-    height: 30px;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 479px) {
   #footer {
-    font-size: 0.6em;
-    height: 3vh;
+    font-size: 1em;
   }
 }
 
@@ -121,15 +117,23 @@ main {
   font-family: "Arvo", serif;
   padding-left: 20px;
   padding-top: 20px;
+  line-height: 28px;
 }
 @media (max-width: 1024px) {
   .evento {
-    font-size: 1.7em;
+    font-size: 2em;
+    line-height: 50px;
   }
 }
 @media (max-width: 767px) {
   .evento {
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 479px) {
+  .evento {
+    font-size: 1.2em;
+    line-height: 28px;
   }
 }
 
@@ -229,13 +233,15 @@ section#sagas {
 }
 @media (max-width: 1024px) {
   #redes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-areas: "icfacebook facebook facebook" "icinstagram instagram instagram" "icyoutube youtube youtube";
+    grid-gap: 20%;
+    grid-row-gap: 40px;
   }
 }
 @media (max-width: 479px) {
   #redes {
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
   }
@@ -333,6 +339,12 @@ section#youtube {
     flex-direction: column;
   }
 }
+@media (max-width: 767px) {
+  #eventosargentina {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 section#calendario {
   grid-area: calendario;
@@ -364,6 +376,12 @@ section#mapa {
   }
 }
 
+@media (max-width: 1024px) {
+  .mapa {
+    width: 470px;
+    height: 320px;
+  }
+}
 @media (max-width: 767px) {
   .mapa {
     width: 400px;
@@ -437,12 +455,6 @@ section#mapa {
 }
 @media (max-width: 767px) {
   .flexlibros img {
-    width: 20%;
-    height: 20%;
-  }
-}
-@media (max-width: 479px) {
-  .flexlibros img {
     width: 35%;
     height: 35%;
   }
@@ -490,7 +502,7 @@ a:hover {
 }
 
 .card {
-  height: 950px;
+  height: 1100px;
   width: 200px;
   color: #f2f2f2;
   padding: 20px;
@@ -500,6 +512,12 @@ a:hover {
   border-color: #f2f2f2;
 }
 @media (max-width: 1024px) {
+  .card {
+    height: 2000px;
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
   .card {
     width: auto;
     height: auto;
@@ -516,7 +534,13 @@ div > p {
 }
 @media (max-width: 1024px) {
   div > p {
-    font-size: 2em;
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 479px) {
+  div > p {
+    font-size: 1.2em;
+    line-height: 28px;
   }
 }
 
@@ -554,7 +578,7 @@ div a {
 }
 @media (max-width: 1024px) {
   .cardTitulo {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
@@ -657,11 +681,18 @@ div a {
 @media (max-width: 479px) {
   .menuLibros li a {
     padding: auto;
-    font-size: 0.8em;
-    text-align: start;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: start;
+    font-size: 1em;
+  }
+}
+@media (max-width: 479px) {
+  .menuLibros li {
+    border-right: none;
+  }
+}
+@media (max-width: 479px) {
+  .menuLibros {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -671,23 +702,26 @@ div a {
   font-size: 1.1em;
   margin-bottom: 10px;
   text-align: left;
+  line-height: 28px;
 }
 @media (max-width: 1024px) {
   .parrafo {
     font-size: 2em;
     margin: 10px;
+    line-height: 50px;
   }
 }
 @media (max-width: 767px) {
   .parrafo {
-    margin: 5px;
+    font-size: 1.5em;
+    margin: 10px;
   }
 }
 @media (max-width: 479px) {
   .parrafo {
-    font-size: 1em;
-    line-height: 22px;
-    margin: 10px;
+    font-size: 1.2em;
+    line-height: 28px;
+    margin: 1px;
     color: white;
     text-align: center;
   }
@@ -742,6 +776,7 @@ div a {
     background-image: none;
     width: 100%;
     padding: auto;
+    font-size: 1.5em;
   }
 }
 @media (max-width: 479px) {
@@ -762,6 +797,12 @@ input {
   }
 }
 
+@media (max-width: 767px) {
+  label {
+    font-size: 0.8em;
+  }
+}
+
 /*REGISTRATE Y FORMULARIO*/
 .inputBotones {
   width: 50%;
@@ -775,9 +816,14 @@ input {
     font-size: 1em;
   }
 }
+@media (max-width: 767px) {
+  .inputBotones {
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 479px) {
   .inputBotones {
-    font-size: 0.8em;
+    font-size: 1.4em;
   }
 }
 
@@ -794,10 +840,20 @@ select, option {
     font-size: 1em;
   }
 }
+@media (max-width: 767px) {
+  select, option {
+    font-size: 0.8em;
+  }
+}
 
+@media (max-width: 767px) {
+  .sagafav {
+    font-size: 1em;
+  }
+}
 @media (max-width: 479px) {
   .sagafav {
-    font-size: 1.1em;
+    font-size: 0.8em;
     padding: 30px;
   }
 }
@@ -840,13 +896,13 @@ select, option {
 }
 @media (max-width: 767px) {
   .compraButton {
-    font-size: 1em;
-    width: 100px;
+    font-size: 1.4em;
+    width: 130px;
   }
 }
 @media (max-width: 479px) {
   .compraButton {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
@@ -910,6 +966,17 @@ select, option {
   font-family: "Arvo", serif;
   font-size: 1.1em;
   text-align: left;
+}
+@media (max-width: 1024px) {
+  .lista {
+    font-size: 2em;
+    line-height: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .lista {
+    font-size: 1.5em;
+  }
 }
 
 .flexfotos {
