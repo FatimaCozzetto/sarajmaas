@@ -902,7 +902,9 @@ select, option {
 }
 @media (max-width: 479px) {
   .compraButton {
-    font-size: 1.2em;
+    font-size: 1em;
+    width: 100px;
+    height: 55px;
   }
 }
 
